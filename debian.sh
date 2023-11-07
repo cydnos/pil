@@ -1,4 +1,4 @@
-su-
+su -
 	sed -i 's/#Pubk/Pubk/' /etc/ssh/sshd_config
 	systemctl restart ssh.service
 	apt install sudo vim -y
