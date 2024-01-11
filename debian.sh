@@ -4,6 +4,7 @@ su -
 	apt install sudo vim -y
 	usermod -aG sudo jr
 sed -i 's/#force_color_prompt/force_color_prompt/' ~/.bashrc
+echo 'export HISTTIMEFORMAT="%y/%m/%d %T "' >> .bashrc
 bash
 # ctrl + D
 sudo apt update -y && sudo apt upgrade -y
