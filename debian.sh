@@ -5,6 +5,8 @@ su -
 	usermod -aG sudo jr
 sed -i 's/#force_color_prompt/force_color_prompt/' .bashrc
 echo 'export HISTTIMEFORMAT="%y/%m/%d %T "' >> .bashrc
+# Append history entries, echo | sed a verifier
+# shopt -s histappend    
 bash
 # ctrl + D
 sudo apt update -y && sudo apt upgrade -y
